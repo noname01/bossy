@@ -3,20 +3,20 @@
 The below questions should be answered (in detail!) regarding your submission.
 
 ##### 1. Reflect on how you "learned" to use the library and write the examples, c.f the "Unfamiliar APIs" reading. What is one aspect of the module's code that made is easy to understand? What is one change that would have made it easier?
-> Answer goes here!
+> The bossy module in general is not hard to read. The breakdown of the functions and separation of exports and internals make it easy to understand. However it originally contains very few comments, and has no explanation even for some complex structures like regex, which make it harder to understand. Furthermore, the naming of functions and variables could potentially be improved. For instance, "cmdFlagVals", "lastOptionDef", "isHelpMode" would be much better than "flags", "last", "help" in the original code.
 
 
 ##### 2. Consider the process of writing comments that "raise the level of abstraction." What does this mean to you? If you had to explain to a new CS142 student how to write an effective comment, what would you say? #####
-> Answer goes here!
+> The main readers of the comments would be other programmers and your future self. Interface comments will enable people to treat the module functions as blackboxes, which like "functions" in mathematics, produce exact outputs given a set of inputs. These provides information about how the module/function is meant to be used, which is like an implicit contract signed by the author and client programmers. Inline implementation comments should succintly clarify potential confusions and nothing more. Direct translations are meaningless. Comments should be kept strictly up-to-date with the code.
 
 
 ##### 3. Approximately how many hours did it take you to complete this assignment? #####
-> Answer goes here!
+> 3 hours.
 
 
 ##### 4. Did you receive help from any other sources (classmates, etc)? If so, please list who (be specific!). #####
-> Answer goes here!
+> No.
 
 
 ##### 5. Did you encounter any problems in this assignment we should warn students about in the future? How can we make the assignment better? #####
-> Answer goes here!
+> This module depends on an outdated version of another module, whose APIs are quite different from the latest version which causes some headache. https://google.github.io/styleguide/javascriptguide.xml contains useful JsDoc style guides.
